@@ -60,7 +60,7 @@ public class GeoLocator {
             GeoLocation country = new GeoLocator().getGeoLocation(arg);
 
             if (country.getCountry() != null) {
-                logger.info("Country successfully retrieved: {}", country.getCountry());
+                logger.info("Country data has been successfully retrieved for: {}", country.getQuery());
             } else {
                 logger.error("Country Not Found!");
             }
